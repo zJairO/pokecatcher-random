@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PokeCatcher</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <div class="img-hover-zoom">
+        <img src="img/logo.png">
+    </div>
+        <p>
+    </header>
+    <body>
+        <img id="Btn" onmouseover="this.src='img/btnhover2.png'" onmouseout="this.src='img/btn.png'" onclick="updatePokemon()" src="img/btn.png">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="grid-container">
+            <div class="one">
+                <img src="img/layout/1.png">
+                <img src="img/layout/4.png">
+                <img src="img/layout/7.png">
+                <img src="img/layout/10.png">
+                <img src="img/layout/13.png">
+            </div>
+            <div class="two">
+                <img src="img/layout/2.png">
+                <h1 id="pokemonMsg" style="color: black;">..</h1>
+                <h1 id="pokemonQuantity" style="color: black;">..</h1>
+                <h1 id="pokemonName" style="color: black;">..</h1>
+                <img src="img/layout/14.png">
+            </div>
+            <div class="three">
+                <img src="img/layout/3.png">
+                <img src="img/layout/6.png">
+                <img id="pokemonSprite" src="img/layout/9_1_1.png">
+                <img src="img/layout/9_1.png">
+                <img src="img/layout/12.png">
+                <img src="img/layout/15.png">
+            </div>
+          </div>
+          <h1 id="pokemonName"></h1>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: local('ArcadeClassic'),
+        url('fonts/ArcadeClassic.woff2') format('woff2'),
+        url('fonts/ArcadeClassic.woff') format('woff'),
+        url('fonts/ArcadeClassic.ttf') format('truetype'),
+        url('fonts/ArcadeClassic.svg#ArcadeClassic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+h1#pokemonMsg {
+    font-size: 17px !important;
+    height: 59px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 41px;
+}
+h1#pokemonQuantity {
+    font-size: 20px !important;
+    color: white;
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1#pokemonName {
+    font-size: 17px !important;
+    height: 59px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color:black !important;
+    color: white;
+    text-align: center;
+    font-family: 'ArcadeClassic';
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    padding-bottom: 15px;
+}
+
+.grid-container {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "one two three";
+    width: 682px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  .one { 
+      grid-area: one;
+    }
+  
+  .two { 
+      grid-area: two; 
+    
+    }
+  
+  .three { 
+      grid-area: three; 
+
+}
+
+img#pokemonSprite{
+    padding-top: 53px;
+    padding-bottom: 52px;
+    padding-left: 3px;
+    padding-right: 2px;
+
+    image-rendering: pixelated;
+    height: 200px;
+    width: 200px;
+}
+
+.img-hover-zoom {
+    height: 100px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
