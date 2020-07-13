@@ -5,4 +5,4 @@ Les dejo el codigo de fuente por si gustan utilizarlo para algún proyecto.
 Yo utilicé Javascript, css, html5.
 ![enter image description here](https://pokecatcher.zjairo.com/img/index.png)
 
-**[Live view](https://pokecatcher.zjairo.com)**
+**[Live view](https://zjairo.github.io/pokecatcher-random/)**
